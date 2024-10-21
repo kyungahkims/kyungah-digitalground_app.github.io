@@ -99,10 +99,6 @@ function handleSwipe() {
 $('.wing').on('touchstart', onTouchStart);
 $('.wing').on('touchend', onTouchEnd);
 
-/* PC에서 마우스 이벤트 */
-/* $('.wing').on('mousedown', onTouchStart);
-$('.wing').on('mouseup', onTouchEnd); */
-
 /* scroll 이벤트 */
 function onScroll() {
 
