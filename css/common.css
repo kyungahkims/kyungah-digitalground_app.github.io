@@ -862,6 +862,7 @@ nav ul li:nth-child(4) a.active::before {
 }
 .radio_wrap.radio_wrap1 {
   gap: 10%;
+  row-gap: 5px;
 }
 .radio_wrap.radio_wrap1 input[type=radio] {
   position: relative;
