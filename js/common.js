@@ -149,7 +149,7 @@ $('#dataRange2').on('input change', function () {
 });
 
 /* 드롭 다운 열고 닫기 */
-$('.dropdown_btn').click(function () {
-	$(this).toggleClass('active');
-	$(this).parents('.btn').siblings('.info_box').stop().slideToggle('500');
+$('.box3 .btn').click(function () {
+	$(this).find('button').toggleClass('active');
+	$(this).siblings('.info_box').stop().slideToggle('500');
 });
