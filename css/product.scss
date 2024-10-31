@@ -78,30 +78,6 @@ header {
 		}
 	}
 
-	.product_details {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		column-gap: 5px;
-		row-gap: 30px;
-
-		li {
-			flex: 1;
-			min-width: 32%;
-			font-size: 14px;
-			text-align: center;
-
-			div {
-				font-weight: 500;
-				margin-bottom: 8px;
-			}
-
-			p {
-				color: #555;
-			}
-		}
-	}
-
 	.add_details {
 		list-style: initial;
 		font-size: 13px;

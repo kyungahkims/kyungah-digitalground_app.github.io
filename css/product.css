@@ -64,35 +64,6 @@ header h2 {
   border: 0;
   margin: 12px 0 16px;
 }
-.wing .product_details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-column-gap: 5px;
-     -moz-column-gap: 5px;
-          column-gap: 5px;
-  row-gap: 30px;
-}
-.wing .product_details li {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  min-width: 32%;
-  font-size: 14px;
-  text-align: center;
-}
-.wing .product_details li div {
-  font-weight: 500;
-  margin-bottom: 8px;
-}
-.wing .product_details li p {
-  color: #555;
-}
 .wing .add_details {
   list-style: initial;
   font-size: 13px;
