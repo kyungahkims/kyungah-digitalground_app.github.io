@@ -1002,9 +1002,6 @@ nav ul li:nth-child(4) a.active::before {
   border: 1px solid #f53b3b;
   background-color: #f53b3b;
 }
-.radio_wrap.radio_wrap5 {
-  margin-bottom: 12px;
-}
 .radio_wrap.radio_wrap5 label span {
   display: -webkit-box;
   display: -ms-flexbox;

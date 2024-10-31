@@ -264,7 +264,7 @@ header {
 				}
 
 				div {
-					width: 65px;
+					min-width: 65px;
 					color: #000;
 					margin-right: 16px;
 				}
@@ -449,6 +449,10 @@ header {
 				margin-top: 8px;
 			}
 
+			&.mb {
+				margin-bottom: 12px;
+			}
+
 			li:nth-child(2) {
 				font-size: 14px;
 				font-weight: 500;
@@ -539,5 +543,19 @@ header {
 	.sel_btn {
 		box-shadow: 0 2px 4px 0 rgba(245, 59, 59, 0.4);
 		margin-top: 16px;
+	}
+}
+
+@media screen and (max-width: 330px) {
+	.check_list {
+		padding: 6px;
+
+		.total {
+			line-height: 1;
+		}
+	}
+
+	.radio_wrap.radio_wrap5 label span {
+		width: 22px;
 	}
 }

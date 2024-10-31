@@ -261,7 +261,7 @@ header h2 {
   margin-bottom: 4px;
 }
 .list_wrap .box2 .info li div {
-  width: 65px;
+  min-width: 65px;
   color: #000;
   margin-right: 16px;
 }
@@ -439,6 +439,9 @@ header h2 {
 .list_wrap3 .box4 ul:nth-child(5) {
   margin-top: 8px;
 }
+.list_wrap3 .box4 ul.mb {
+  margin-bottom: 12px;
+}
 .list_wrap3 .box4 ul li:nth-child(2) {
   font-size: 14px;
   font-weight: 500;
@@ -520,4 +523,16 @@ header h2 {
   -webkit-box-shadow: 0 2px 4px 0 rgba(245, 59, 59, 0.4);
           box-shadow: 0 2px 4px 0 rgba(245, 59, 59, 0.4);
   margin-top: 16px;
+}
+
+@media screen and (max-width: 330px) {
+  .check_list {
+    padding: 6px;
+  }
+  .check_list .total {
+    line-height: 1;
+  }
+  .radio_wrap.radio_wrap5 label span {
+    width: 22px;
+  }
 }/*# sourceMappingURL=estimate.css.map */
