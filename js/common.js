@@ -28,10 +28,10 @@ $('nav li').click(function () {
 });
 
 /* 비교 견적 선택*/
-$('.swiper .box_wrap li').click(function () {
+/* $('.swiper .box_wrap li').click(function () {
 	$(this).closest('.box_wrap').find('li').removeClass('active');
 	$(this).addClass('active');
-});
+}); */
 
 /* 요금제 선택하기 */
 $('.question_box .box_wrap button').click(function () {
@@ -146,4 +146,10 @@ $('#dataRange').on('input change', function () {
 
 $('#dataRange2').on('input change', function () {
 	updateLabel2($(this).val());
+});
+
+/* 드롭 다운 열고 닫기 */
+$('.dropdown_btn').click(function () {
+	$(this).toggleClass('active');
+	$(this).parents('.btn').siblings('.info_box').stop().slideToggle('500');
 });
