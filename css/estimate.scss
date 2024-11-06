@@ -607,9 +607,12 @@ header {
 	.btn_wrap {
 		column-gap: 8px;
 
-		button {
-			box-shadow: none;
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			max-width: 160px;
+			box-shadow: none;
 
 			&:nth-child(2) {
 				color: #000;
