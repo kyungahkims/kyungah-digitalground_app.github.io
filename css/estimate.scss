@@ -13,6 +13,10 @@ header {
 	background-color: #f3f3f3;
 	overflow-y: auto;
 	padding-bottom: 135px;
+
+	&.wrapper2 {
+		padding-bottom: 80px;
+	}
 }
 
 /* tab_wrap */
@@ -54,7 +58,6 @@ header {
 		flex-direction: column;
 		align-items: flex-start;
 		padding-bottom: 20px;
-
 
 		h3 {
 			display: flex;
@@ -210,7 +213,7 @@ header {
 	}
 }
 
-/********** 2 **********/
+/********** 2, 4 **********/
 .date {
 	font-size: 14px;
 	font-weight: 500;
@@ -272,63 +275,30 @@ header {
 		}
 	}
 
-	&>.box3 {
+	&>.box3,
+	&>.box6 {
 		position: relative;
 		padding-bottom: 0;
 		cursor: pointer;
 
-		&:nth-child(3) {
-			border: 1px solid #f53b3b;
+		&.box6 {
+			padding-bottom: 12px;
+
+			.sell_info {
+				padding-bottom: 10px;
+			}
+		}
+
+		&.box3 {
+			&:nth-child(3) {
+				border: 1px solid #f53b3b;
+			}
 		}
 
 		.label {
 			position: absolute;
 			top: -15px;
 			right: -3px;
-		}
-
-		.sell_info {
-			width: 100%;
-			border-bottom: 1px solid #f4f4f4;
-			padding-bottom: 12px;
-			margin-bottom: 16px;
-
-			.product_img {
-				width: 40px;
-				height: 40px;
-				border-radius: 50%;
-				overflow: hidden;
-			}
-
-			.product_name {
-				display: flex;
-				font-size: 14px;
-				font-weight: bold;
-
-				span {
-					display: flex;
-					align-items: center;
-					font-size: 12px;
-					font-weight: 300;
-					color: #999;
-
-					&::before {
-						content: "";
-						display: inline-block;
-						width: 4px;
-						height: 4px;
-						border-radius: 50%;
-						background-color: #ddd;
-						margin: 0 4px;
-					}
-				}
-			}
-
-			.num {
-				font-size: 12px;
-				font-weight: 300;
-				color: #999;
-			}
 		}
 
 		h3 {
@@ -379,6 +349,51 @@ header {
 			}
 		}
 	}
+
+	/* sell_info */
+	.sell_info {
+		width: 100%;
+		border-bottom: 1px solid #f4f4f4;
+		padding-bottom: 12px;
+		margin-bottom: 16px;
+
+		.product_img {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			overflow: hidden;
+		}
+
+		.product_name {
+			display: flex;
+			font-size: 14px;
+			font-weight: bold;
+
+			span {
+				display: flex;
+				align-items: center;
+				font-size: 12px;
+				font-weight: 300;
+				color: #999;
+
+				&::before {
+					content: "";
+					display: inline-block;
+					width: 4px;
+					height: 4px;
+					border-radius: 50%;
+					background-color: #ddd;
+					margin: 0 4px;
+				}
+			}
+		}
+
+		.num {
+			font-size: 12px;
+			font-weight: 300;
+			color: #999;
+		}
+	}
 }
 
 /* list_wrap2 */
@@ -395,7 +410,7 @@ header {
 	}
 }
 
-/********** 3 **********/
+/********** 3, 5 **********/
 .sell_info2 {
 	display: flex;
 	align-items: center;
@@ -426,13 +441,56 @@ header {
 }
 
 /* list_wrap3 */
-.list_wrap3 {
-	padding-top: 28px;
+.list_wrap {
+	&.list_wrap3 {
+		padding-top: 28px;
+	}
 
-	.box4 {
-		padding: 16px;
+	.box4,
+	.box5 {
+		&.box4 {
+			padding: 16px;
+		}
 
-		ul {
+		&.box5 {
+			padding: 12px 12px 16px 12px;
+			margin-bottom: 20px;
+
+			.product_img {
+				width: 60px;
+				height: 60px;
+				margin-right: 12px;
+
+				img {
+					max-width: 42px;
+					max-height: 42px;
+				}
+			}
+
+			.product_name {
+				margin-bottom: 4px;
+			}
+
+			&>ul {
+				li.s_box {
+					padding: 4px;
+				}
+
+				&:nth-child(5) {
+					margin-top: 0;
+				}
+
+				&:nth-child(6) {
+					margin-top: 8px;
+				}
+
+				&:nth-child(11) {
+					margin-bottom: 3px;
+				}
+			}
+		}
+
+		&>ul {
 			width: 100%;
 			display: flex;
 			justify-content: space-between;
@@ -544,6 +602,57 @@ header {
 	.sel_btn {
 		box-shadow: 0 2px 4px 0 rgba(245, 59, 59, 0.4);
 		margin-top: 16px;
+	}
+
+	.btn_wrap {
+		column-gap: 8px;
+
+		button {
+			box-shadow: none;
+			max-width: 160px;
+
+			&:nth-child(2) {
+				color: #000;
+				background-color: #ffeb3b;
+
+				&::before {
+					content: "";
+					display: inline-block;
+					position: relative;
+					bottom: -2px;
+					width: 16px;
+					height: 16px;
+					background: url('../img/ico-kakao.png') no-repeat center;
+					margin-right: 8px;
+				}
+			}
+		}
+	}
+}
+
+.cs {
+	display: flex;
+	margin-right: 40px;
+	margin: 0 0 12px 0;
+
+	&::before {
+		content: "";
+		min-width: 32px;
+		height: 32px;
+		display: inline-block;
+		border-radius: 50%;
+		background: url('../img/img-profile-cs.png') no-repeat center;
+		margin-right: 8px;
+	}
+
+	p {
+		font-size: 14px;
+		line-height: 1.43;
+		color: #000;
+		border-radius: 0 10px 10px 10px;
+		background-color: #fff;
+		padding: 12px;
+		margin-top: 8px;
 	}
 }
 
