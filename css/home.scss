@@ -341,27 +341,6 @@
 					display: flex;
 					align-items: center;
 				}
-
-				.star_wrap {
-					img {
-						vertical-align: middle;
-					}
-
-					span {
-						content: "";
-						display: inline-block;
-						width: 16px;
-						height: 16px;
-					}
-
-					.star_on {
-						background: url('../img/ico_star_on.png') no-repeat center;
-					}
-
-					.star_off {
-						background: url('../img/ico_star_off.png') no-repeat center;
-					}
-				}
 			}
 
 			.product_img {

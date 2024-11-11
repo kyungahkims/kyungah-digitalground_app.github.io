@@ -1,6 +1,6 @@
 /* 슬라이드 */
 $('.swiper-group').each(function (t) {
-	$(this).find('.swiper').addClass('type' + t);
+	$(this).find('.swiper, .swiper-pagination').addClass('type' + t);
 
 	const slideCount = $(this).find('.swiper-slide').length;
 	const swiper = new Swiper('.swiper.type' + t, {
@@ -12,6 +12,10 @@ $('.swiper-group').each(function (t) {
 		initialSlide: 0,
 		centeredSlides: slideCount === 1,
 		centeredSlidesBounds: slideCount === 1,
+		pagination: {
+			el: '.swiper-pagination.type' + t,
+			clickable: true,
+		},
 	});
 });
 

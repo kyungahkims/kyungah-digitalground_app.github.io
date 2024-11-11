@@ -987,3 +987,25 @@ nav {
 		}
 	}
 }
+
+/* star_wrap */
+.star_wrap {
+	img {
+		vertical-align: middle;
+	}
+
+	span {
+		content: "";
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+	}
+
+	.star_on {
+		background: url('../img/ico_star_on.png') no-repeat center/contain;
+	}
+
+	.star_off {
+		background: url('../img/ico_star_off.png') no-repeat center/contain;
+	}
+}

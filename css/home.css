@@ -330,21 +330,6 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.wing .review_wrap .swiper-slide .product_info_wrap .star_wrap img {
-  vertical-align: middle;
-}
-.wing .review_wrap .swiper-slide .product_info_wrap .star_wrap span {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-}
-.wing .review_wrap .swiper-slide .product_info_wrap .star_wrap .star_on {
-  background: url("../img/ico_star_on.png") no-repeat center;
-}
-.wing .review_wrap .swiper-slide .product_info_wrap .star_wrap .star_off {
-  background: url("../img/ico_star_off.png") no-repeat center;
-}
 .wing .review_wrap .swiper-slide .product_img {
   display: -webkit-box;
   display: -ms-flexbox;

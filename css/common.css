@@ -1035,4 +1035,21 @@ nav ul li:nth-child(4) a.active::before {
   color: #fff;
   border: 1px solid #f53b3b;
   background-color: #f53b3b;
+}
+
+/* star_wrap */
+.star_wrap img {
+  vertical-align: middle;
+}
+.star_wrap span {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.star_wrap .star_on {
+  background: url("../img/ico_star_on.png") no-repeat center/contain;
+}
+.star_wrap .star_off {
+  background: url("../img/ico_star_off.png") no-repeat center/contain;
 }/*# sourceMappingURL=common.css.map */
